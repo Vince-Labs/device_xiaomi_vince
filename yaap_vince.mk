@@ -28,18 +28,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
 # Inherit some common stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Boot Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Gapps
+TARGET_BUILD_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := vince
-PRODUCT_NAME := aosp_vince
+PRODUCT_NAME := yaap_vince
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 5 Plus
 PRODUCT_MANUFACTURER := Xiaomi

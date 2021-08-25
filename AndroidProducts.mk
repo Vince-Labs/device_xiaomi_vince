@@ -14,9 +14,9 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_vince.mk
+    $(LOCAL_DIR)/yaap_vince.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_vince-user \
-    aosp_vince-userdebug \
-    aosp_vince-eng
+    yaap_vince-user \
+    yaap_vince-userdebug \
+    yaap_vince-eng
